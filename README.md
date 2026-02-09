@@ -347,7 +347,6 @@ print(planet_2.orbit())
 print(planet_3.orbit())
 ```
 ---
-
 ### Output
 ```python
 Planet: Earth | Type: Terrestrial | Star: Sun
@@ -528,9 +527,7 @@ A standalone function that:
 - Builds a vertical bar chart using text
 
 ---
-
 ## Example Usage
-
 ```python
 food = Category("Food")
 clothing = Category("Clothing")
@@ -581,9 +578,7 @@ Percentage spent by category
         g     
 ```
 ---
----
 ### UML Diagram (Mermaid)
-
 ```mermaid
 classDiagram
     class Category {
@@ -726,6 +721,60 @@ Service charges: 3
 Final price of ticket: 20
 ```
 ---
+## Discount Calculator (Lab)
+
+### Description
+This lab focuses on building a reusable function that calculates the final price of an item after applying a percentage discount.  
+The function includes strict input validation to handle invalid price and discount values gracefully.
+
+---
+
+### Objective
+- Create a function to apply percentage-based discounts
+- Validate numeric inputs
+- Handle edge cases such as zero, negative values, and invalid discount ranges
+- Pass all freeCodeCamp test cases successfully
+
+---
+
+### User Stories (Short)
+- Validate that price and discount are numbers
+- Ensure price is greater than zero
+- Ensure discount is between 0 and 100
+- Calculate and return the final price after discount
+
+---
+
+### System Components
+- **Function**
+  - `apply_discount(price, discount)`
+- **Inputs**
+  - Price (int or float)
+  - Discount percentage (int or float)
+- **Output**
+  - Final price after discount
+  - Error messages for invalid inputs
+
+---
+
+### Example Usage
+
+```python
+print(apply_discount(100, 20))
+print(apply_discount(200, 50))
+print(apply_discount(50, 0))
+print(apply_discount(74.5, 20.0))
+```
+---
+### Output
+```text
+80
+100
+50
+59.6
+```
+---
+
 
 
 
