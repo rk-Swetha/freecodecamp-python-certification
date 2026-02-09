@@ -97,8 +97,10 @@ Output
 
 ```python
 number_pattern("5")
-
-Output
+```
+---
+### Output
+```text
 Argument must be an integer value.
 ```
 ---
@@ -129,7 +131,7 @@ and reports detailed validation errors when rules are violated.
 ```python
 validate(medical_records)
 ```
-
+---
 ### Output 
 ```text
 Unexpected format 'patient_id: p1002' at position 1.
@@ -181,9 +183,9 @@ Notifications: enabled
 Volume: high
 ```
 ---
-# Debug an ISBN Validator
+## Debug an ISBN Validator
 
-## Description
+### Description
 The ISBN (International Standard Book Number) is a unique identifier assigned to commercial books.  
 An ISBN can be either **10 or 13 digits long**, where the last digit is a **check digit** calculated from the other digits.
 
@@ -192,7 +194,7 @@ This lab is part of the **freeCodeCamp Python Certification**.
 
 ---
 
-## Objective
+### Objective
 The goal of this project is to:
 - Validate ISBN-10 and ISBN-13 codes correctly
 - Handle all runtime errors without crashing
@@ -201,7 +203,7 @@ The goal of this project is to:
 
 ---
 
-## Input Format
+### Input Format
 The user must enter input in the following format:
 `ISBN,length`
 
@@ -214,7 +216,7 @@ The user must enter input in the following format:
 - Length must be either `10` or `13`
 ---
 
-## Program Behavior
+### Program Behavior
 Based on the input, the program displays one of the following messages:
 
  `Valid ISBN Code.`
@@ -475,16 +477,16 @@ classDiagram
     User --> Email : creates
 ```
 ---
-# Budget App (freeCodeCamp Certification Project)
+## Budget App (freeCodeCamp Certification Project)
 
-## Description
+### Description
 The Budget App is a simple Python application that helps track spending across different budget categories. It allows users to deposit money, withdraw funds, transfer amounts between categories, and visualize spending distribution using a text-based bar chart.
 
 This project is part of the **freeCodeCamp Python Certification** and focuses on object-oriented programming, data handling, and string formatting.
 
 ---
 
-## Objective
+### Objective
 To build a budget management system that:
 - Tracks financial transactions per category
 - Prevents overspending using balance checks
@@ -493,7 +495,7 @@ To build a budget management system that:
 
 ---
 
-## User Stories (Short)
+### User Stories (Short)
 - Create a `Category` class to manage budget categories
 - Store all transactions in a ledger
 - Allow deposits, withdrawals, and transfers
@@ -828,6 +830,66 @@ has_ride_share_app = True
 ```text
 True
 ```
+---
+
+## Build a Salary Tracker (Workshop)
+
+### Description
+This workshop demonstrates object-oriented programming concepts by building a salary tracking system for employees.  
+It uses encapsulation, class variables, properties, and validation logic to manage employee roles and salaries safely.
+
+---
+
+### Objective
+- Practice class design and encapsulation
+- Use class-level data for shared configuration
+- Apply property getters and setters
+- Enforce validation rules for promotions and salary updates
+
+---
+
+### User Stories (Short)
+- Create an `Employee` class with name and level
+- Assign base salaries based on employee level
+- Allow promotions while preventing demotions
+- Validate salary updates using minimum thresholds
+- Display readable employee information
+
+---
+
+### System Components
+
+- **Class**
+  - `Employee`
+- **Class Variable**
+  - `_base_salaries`
+- **Instance Attributes**
+  - `_name`
+  - `_level`
+  - `_salary`
+- **Methods**
+  - `__str__`, `__repr__`
+  - Property getters and setters for name, level, salary
+
+---
+
+### Example Usage
+
+```python
+charlie_brown = Employee('Charlie Brown', 'trainee')
+print(charlie_brown)
+print(f'Base salary: ${charlie_brown.salary}')
+charlie_brown.level = 'junior'
+```
+---
+### Output
+```text
+Charlie Brown: trainee
+Base salary: $1000
+'Charlie Brown' promoted to 'junior'.
+Salary updated to $2000.
+```
+
 
 
 
