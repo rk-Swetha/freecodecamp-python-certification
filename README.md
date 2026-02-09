@@ -604,6 +604,61 @@ classDiagram
 
     Category --> create_spend_chart : provides spending data
 ```
+---
+
+## Report Card Printer (Workshop)
+
+### Description
+This workshop introduces Python variables, data types, and type checking.  
+It demonstrates how to store student-related information and verify data types using built-in Python functions.
+
+---
+
+### Objective
+- Understand basic Python data types
+- Print values along with their data types
+- Use `isinstance()` to verify variable types
+
+---
+
+### User Stories (Short)
+- Store student details using variables
+- Identify data types of stored values
+- Validate numeric data using type checking
+
+---
+
+### System Components
+- **Variables**: name, is_student, age, score
+- **Built-in Functions**:
+  - `type()` – to identify data types
+  - `isinstance()` – to validate numeric types
+
+---
+
+### Example Usage
+
+```python
+name = 'Alice'
+is_student = True
+age = 20
+score = 80.5
+
+print(type(name))
+print(type(is_student))
+print(type(age))
+print(isinstance(score, float))
+```
+---
+### Output
+```text
+Alice <class 'str'>
+True <class 'bool'>
+20 <class 'int'>
+True
+80.5 <class 'float'>
+```
+
 
 
 
