@@ -605,7 +605,6 @@ classDiagram
     Category --> create_spend_chart : provides spending data
 ```
 ---
-
 ## Report Card Printer (Workshop)
 
 ### Description
@@ -658,6 +657,76 @@ True <class 'bool'>
 True
 80.5 <class 'float'>
 ```
+---
+
+## Movie Ticket Booking Calculator (Workshop)
+
+### Description
+This workshop simulates a movie ticket booking system using conditional logic.  
+It calculates the final ticket price based on user age, seat type, show time, membership status, and applicable discounts or extra charges.
+
+---
+
+### Objective
+- Practice conditional statements (`if`, `elif`, `else`)
+- Apply logical operators (`and`, `or`)
+- Calculate final prices dynamically
+- Understand real-world decision-based programming logic
+
+---
+
+### User Stories (Short)
+- Verify if a user is eligible to book a ticket
+- Restrict Evening shows based on age
+- Apply membership discounts when applicable
+- Add extra charges for weekends or Evening shows
+- Calculate final ticket price based on seat type
+
+---
+
+### System Components
+- **Inputs**
+  - Base ticket price
+  - Age
+  - Seat type (Premium / Gold / Regular)
+  - Show time
+  - Membership status
+  - Weekend indicator
+- **Logic**
+  - Eligibility checks
+  - Discount calculation
+  - Extra charge calculation
+  - Service charge calculation
+- **Output**
+  - Final ticket price
+  - Booking status messages
+
+---
+
+### Example Usage
+```python
+base_price = 15
+age = 21
+seat_type = 'Gold'
+show_time = 'Evening'
+is_member = False
+is_weekend = False
+```
+---
+### Output
+```text
+User is eligible to book a ticket
+User is eligible for Evening shows
+User does not qualify for membership discount
+Discount: 0
+Extra charges will be applied
+Extra charges: 2
+Ticket booking condition satisfied
+Service charges: 3
+Final price of ticket: 20
+```
+---
+
 
 
 
