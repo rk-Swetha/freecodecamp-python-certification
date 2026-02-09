@@ -128,8 +128,10 @@ and reports detailed validation errors when rules are violated.
 
 ```python
 validate(medical_records)
+```
 
-Output - 
+### Output 
+```text
 Unexpected format 'patient_id: p1002' at position 1.
 Unexpected format 'last_visit_id: v2302' at position 1.
 Unexpected format 'last_visit_id: v2303' at position 2.
@@ -774,6 +776,58 @@ print(apply_discount(74.5, 20.0))
 59.6
 ```
 ---
+
+## Travel Weather Planner (Lab)
+
+### Description
+This lab uses conditional logic to determine whether commuting is possible based on weather conditions, travel distance, and available transportation options.
+
+---
+
+### Objective
+- Practice conditional statements (`if`, `elif`, `else`)
+- Use boolean logic to evaluate multiple conditions
+- Determine commuting feasibility based on real-world constraints
+- Pass all freeCodeCamp test cases
+
+---
+
+### User Stories (Short)
+- Evaluate commuting options using distance categories
+- Handle rainy and non-rainy conditions
+- Consider availability of bike, car, or ride-share app
+- Print a boolean result indicating whether commuting is possible
+
+---
+
+### System Components
+- **Variables**
+  - `distance_mi`
+  - `is_raining`
+  - `has_bike`
+  - `has_car`
+  - `has_ride_share_app`
+- **Logic**
+  - Conditional checks based on distance and transportation options
+- **Output**
+  - `True` or `False`
+
+---
+
+### Example Usage
+
+```python
+distance_mi = 19
+is_raining = False
+has_bike = True
+has_car = True
+has_ride_share_app = True
+```
+---
+### Output
+```text
+True
+```
 
 
 
