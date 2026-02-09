@@ -889,9 +889,86 @@ Base salary: $1000
 'Charlie Brown' promoted to 'junior'.
 Salary updated to $2000.
 ```
+---
 
+## Build a Game Character Stats Tracker (Lab)
 
+### Description
+This lab focuses on object-oriented programming by building a game character stats tracker.
+It manages a character’s health, mana, and level while enforcing value limits through
+property getters and setters.
 
+---
+
+### Objective
+- Practice encapsulation using private attributes
+- Implement property getters and setters
+- Enforce value constraints on character stats
+- Track and display character progression
+
+---
+
+### User Stories (Short)
+- Create a `GameCharacter` class
+- Initialize name, health, mana, and level
+- Prevent health and mana from exceeding limits
+- Allow the character to level up
+- Display formatted character stats
+
+---
+
+### System Components
+
+- **Class**
+  - `GameCharacter`
+- **Attributes**
+  - `_name`
+  - `_health`
+  - `_mana`
+  - `_level`
+- **Methods**
+  - `level_up()`
+  - `__str__()`
+- **Properties**
+  - `name` (read-only)
+  - `health`
+  - `mana`
+  - `level`
+
+---
+
+### Example Usage
+
+```python
+hero = GameCharacter('Kratos')
+print(hero)
+
+hero.health -= 30
+hero.mana -= 10
+print(hero)
+
+hero.level_up()
+print(hero)
+```
+---
+### Output
+```text
+Name: Kratos
+Level: 1
+Health: 100
+Mana: 50
+
+Name: Kratos
+Level: 1
+Health: 70
+Mana: 40
+
+Kratos leveled up to 2!
+Name: Kratos
+Level: 2
+Health: 100
+Mana: 50
+```
 
 
 
